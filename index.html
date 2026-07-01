@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="task-card">
+      <div class="card-header">
+        <div>
+          <p class="eyebrow">Taskflow</p>
+          <h1>Manage your day with style</h1>
+        </div>
+        <span id="task-count">0 tasks remaining</span>
+      </div>
+
+      <div class="task-input-area">
+        <input id="task-input" type="text" placeholder="Add a new task..." aria-label="Task description" />
+        <div class="action-group">
+          <button id="add-task-btn" type="button">Add Task</button>
+          <button id="clear-completed-btn" type="button" class="secondary-btn">Clear Completed</button>
+        </div>
+      </div>
+
+      <div id="task-list" class="task-list"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
